@@ -78,7 +78,6 @@ def parseStations(stationName):
 def getStation(stationName, stationId):
     pars = HTMLParser.HTMLParser()
     url = URL % stationId
-    print url
     response = r.get(url, headers=headers)
     remove = [
         '</b>',
@@ -86,11 +85,12 @@ def getStation(stationName, stationId):
     ]
     destinations = {}
     departures = {}
-    print('Departures from %s' % stationName)
+    print("Departures from %s" % stationName)
+    print("")
     destcount = 0
     depcount = 0
     for dst in re.finditer('[0-9].* mot.*', response.text, re.MULTILINE):
-        dst = unicode(pars.unescape(dst.group(0).encode('utf8')))
+        dst = unicode(pars.unescape(dst.group(0).encode('utf8'))).ljust(35)
         for val in remove:
             dst = re.sub(val, '', dst, flags=re.MULTILINE)
         destination = {
@@ -109,7 +109,7 @@ def getStation(stationName, stationId):
         depcount = depcount + 1
 
     for key in destinations:
-        print(destinations[key] + '\t\t' + departures[key])
+        print(destinations[key] + departures[key])
 
     print('')
 
