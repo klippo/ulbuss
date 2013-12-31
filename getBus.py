@@ -78,20 +78,39 @@ def parseStations(stationName):
 def getStation(stationName, stationId):
     pars = HTMLParser.HTMLParser()
     url = URL % stationId
+    print url
     response = r.get(url, headers=headers)
     remove = [
-        u'</div.*\n',
-        u'<div.*\n',
-        u'</b>.*\n',
-        u', läge.*'
+        '</b>',
+        '\r'
     ]
+    destinations = {}
+    departures = {}
     print('Departures from %s' % stationName)
-    for dst in re.finditer('[0-9].* mot.*\n.*\n.*\nom.*', response.text, flags=re.MULTILINE):
-        destination = unicode(pars.unescape(dst.group(0).encode('utf8')))
-        destination = re.sub('om', '\tom', destination)
+    destcount = 0
+    depcount = 0
+    for dst in re.finditer('[0-9].* mot.*', response.text, re.MULTILINE):
+        dst = unicode(pars.unescape(dst.group(0).encode('utf8')))
         for val in remove:
-            destination = re.sub(val, '', destination, flags=re.MULTILINE)
-        print destination
+            dst = re.sub(val, '', dst, flags=re.MULTILINE)
+        destination = {
+            destcount: dst
+        }
+        destinations.update(destination)
+        destcount = destcount + 1
+
+    for departure in re.finditer('.*\([0-9]{2}:[0-9]{2}\)', response.text, re.VERBOSE):
+        departure = unicode(pars.unescape(departure.group(0).encode('utf8')))
+        departure = re.sub('.*om', ' om', departure)
+        departure = {
+            depcount: departure
+        }
+        departures.update(departure)
+        depcount = depcount + 1
+
+    for key in destinations:
+        print(destinations[key] + '\t\t' + departures[key])
+
     print('')
 
 
