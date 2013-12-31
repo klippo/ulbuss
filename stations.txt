@@ -1,0 +1,397 @@
+700001,Stora Torget
+700002,Östra Nyby
+700003,Stabby
+700004,Gottsunda Simhall
+700005,Bandstolsvägen
+700006,Cellovägen
+700008,Jordgubbsgatan
+700009,Flöjtvägen
+700010,Solistvägen
+700011,Jenny Linds väg
+700012,Vackra Birgers väg
+700013,Bröderna Berwalds v.
+700014,Gottsunda Centrum
+700016,Linrepevägen
+700017,Barkspadevägen
+700018,Fältvägen
+700019,Valsätraskolan
+700020,Tallbacksvägen
+700021,Grindstugan
+700022,Rosendals skola
+700025,Akademiska södra
+700031,Dragarbrunn
+700032,Klostergatan
+700034,Finn Malmgrens plan
+700035,Luthagsesplanaden
+700036,Geijersgatan
+700041,Ringgatan
+700043,Stabby gärde
+700047,Brantingstorg
+700048,Brantingsskolan
+700049,Verkmästargatan
+700050,Årsta Centrum
+700051,Körvelgatan
+700052,Kummingatan
+700053,Årstagården
+700055,Mistelgatan
+700058,Byggmästargatan
+700059,Björkgatan
+700060,Österängsgatan södra
+700061,Torkelsgatan södra
+700062,Vaksala torg
+700063,Stadshuset
+700064,Trädgårdsgatan
+700065,Slottsbacken
+700066,Botaniska
+700067,Villavägen norra
+700069,Birkagatan
+700070,Sommarro
+700071,Lindsbergsgatan
+700072,Täljstenen
+700073,Kvickstensvägen
+700074,Norra Parkvägen
+700075,Södra Parkvägen
+700076,Malma Bergsväg
+700077,Svamptorget
+700078,Björklundavägen
+700080,Spinnrocksvägen
+700081,August Södermans väg
+700082,Orkestervägen
+700083,Morkullevägen
+700085,Entitparken
+700086,Långvägen
+700087,Fiolbacken
+700091,Fyristorg
+700092,S:t Eriks torg
+700093,Universitetet
+700094,Kyrkogårdsgatan
+700095,Kungsgärdets center
+700097,Klangs gränd
+700098,Helsingforsgatan
+700099,Vänortsgatan
+700100,Nordengatan
+700101,Ekebyhus
+700102,Reykjaviksgatan
+700103,Sernanders väg
+700104,Flogsta centrum
+700105,Flogsta vårdcentral
+700107,Ihres väg
+700108,Noreens väg
+700109,Säves väg
+700110,Saluhallen
+700111,Gamla Torget
+700114,Gamla Uppsala
+700115,Regins väg
+700117,Valhalls väg
+700118,Huges väg
+700119,Topeliusgatan
+700121,Värnlundsgatan
+700122,Ferlinsgatan
+700123,Heidenstamstorg
+700124,Kantorsgatan
+700125,Djäknegatan
+700126,Portalgatan
+700127,Höganäsgatan
+700128,S:t Olofsgatan
+700129,Ekonomikum
+700130,Studentstaden
+700132,Lagerlöfsgatan
+700134,Almqvistgatan
+700135,Levertinsgatan
+700136,Wennerbergsgatan
+700137,Bureusgatan
+700139,Kvarntorget
+700140,Nedre Slottsgatan
+700141,Gränby Centrum
+700142,Gränbyvägen
+700143,Tövädersgatan
+700146,Österängsgatan norra
+700147,Torkelsgatan norra
+700148,Vretgränd
+700152,Bärbygatan
+700153,Bärbyparken
+700154,Flottiljgatan
+700155,Flottörgatan
+700156,Startgatan
+700157,Fjärdhundragatan
+700158,Väpnargatan
+700159,Torbjörnsgatan
+700160,Sköldungagatan
+700162,Svartbäckens vårdc.
+700166,Glimmervägen
+700167,Fältspatsvägen
+700168,Stigbergsvägen
+700169,Västertorg
+700170,Gnejsvägen
+700171,Gnejsplan
+700172,Skolgatan
+700173,Flygargatan
+700183,Krongatan
+700184,Slöjdgatan
+700186,Eriksbergsvägen
+700187,Gustavsbergsgatan
+700188,Hågaån
+700189,Håga gård
+700190,Stugbyn
+700191,Håga
+700192,Liljefors Torg
+700193,Årstagatan
+700195,Skomakargatan
+700196,Källparksgatan
+700198,Ritargatan
+700199,Johannesbäcksgatan
+700200,Gröna gatan
+700201,Axel Johanssons gata
+700202,Stålgatan
+700203,Hansellisgatan
+700204,Möllersvärdsgatan
+700208,Stenhagenskolan
+700209,Herrhagens Byväg
+700212,Stenröset
+700213,Stenhällen
+700214,Gatstenen
+700218,Lundellska skolan
+700219,Uppsala Folkhögskola
+700221,Gustaf Kjellbergs väg
+700222,Kronparksgården
+700223,SVA
+700224,Veterinärvägen
+700225,Campus Ultuna
+700226,Ultuna södra
+700227,Arrheniusplan
+700228,Storvreta bibliotek
+700229,Lingonvägen
+700230,Stubbåkersvägen
+700231,Rosmarinvägen
+700232,Storvreta Centrum
+700233,Adolfsbergsvägen
+700234,Alkärrsvägen
+700235,Ekorrvägen
+700237,Tistelvägen
+700238,Solstrålevägen
+700239,Månskensvägen
+700240,Himmelsvägen
+700241,Vintergatsvägen
+700242,Lyckebo gärde
+700243,Ekeby
+700244,Trekanten
+700247,Hamra
+700248,Segersberg
+700249,Enstalund
+700250,Ensta
+700251,Bredåkers gård
+700252,Vittulsbergsvägen
+700254,Lidnersgatan
+700255,Marknadsgatan
+700256,Vaksala gärde
+700257,Gräslöksgatan
+700258,Sparrisgatan
+700259,Samariterhemmet
+700260,Bergsbrunnagatan
+700262,Märstaplan
+700265,Villingegatan
+700266,Kungsporten
+700268,Verkstadsgatan
+700270,Bolandsgatan
+700271,Spikgatan
+700272,Rapsgatan norra
+700274,Svanbergsgatan
+700275,Timjansgatan
+700276,Fänkålsgatan
+700277,Kamomillgatan
+700278,Hildur Ottelinsgatan
+700279,Rickomberga
+700280,Myrberga
+700284,Ultunaallén
+700285,Holmvägen
+700286,Herrgårdsvägen
+700287,Lärkvägen
+700288,Ekolnsvägen norra
+700289,Sunnerstabacken
+700290,Mälarvägen
+700291,Rådjursstigen
+700293,Granebergsparken
+700294,Lyssnavägen
+700296,Skarholmen
+700300,Bälinge skola
+700301,Lundgården
+700302,Bälinge Centrum
+700303,Prebendevägen
+700305,Högby
+700306,Flädervägen
+700307,Pionvägen
+700308,Ryttarvägen
+700309,Gråalsvägen
+700310,Lytta
+700311,Ärentuna vägskäl
+700312,Svista
+700313,Stora Vallskog
+700314,Lilla Vallskog
+700315,Ärna bro
+700316,Ärna gård
+700317,Lilla Myrby
+700320,Sverkerskolan
+700321,Wallingatan
+700323,Norrlandsgatan
+700325,Bäverns gränd
+700326,Sturegatan
+700329,Heidenstamsgatan
+700330,Fyrishov
+700333,Kungsängsesplanaden
+700334,Vimpelgatan
+700335,Lilla Ultuna
+700336,Kuggebro
+700337,Vilan
+700338,Lapplandsresan
+700339,Ölandsresan
+700340,Sävjaskolan
+700341,Västgötaresan
+700342,Gotlandsresan
+700343,Skåneresan
+700344,Iduns väg
+700345,Bågspännarvägen
+700346,Nyby gård
+700347,Sandels gata
+700349,Moskén
+700353,Källarbäcksvägen
+700354,Rörbäcksvägen
+700355,Handarbetsvägen
+700356,Bonadsvägen
+700358,Sävja kyrka
+700360,Fiskgjusevägen
+700361,Hultvägen
+700362,Backmovägen
+700363,Nyckelaxet
+700364,Vävstolsvägen
+700365,Kardvägen
+700366,Nåntunaparken
+700367,Nämndemansvägen
+700368,Tunabergsallén
+700369,Tunabackar
+700370,Söderforsgatan
+700371,Hållnäsgatan
+700373,Librobäck
+700374,Gimogatan
+700375,Skeppet
+700377,Fyrisvallsgatan
+700379,Danmarksgatan
+700381,Nymansgatan
+700382,Sylveniusgatan
+700384,Döbelnsgatan
+700385,Kåbovägen
+700387,Ulleråker norra
+700388,Hammarby kyrkogård
+700389,Genetikvägen
+700391,Tjädervägen
+700392,Svankärrsvägen
+700393,Trasthagen
+700394,Brostugevägen
+700395,Kålsängsgränd
+700396,Kungsängstorg
+700397,Islandsgatan
+700398,Siktargatan
+700400,Lägerhyddsvägen
+700401,Kungshörnet
+700402,Stångjärnsgatan
+700403,Boländerna
+700404,Gullvivevägen
+700406,Slånvägen
+700407,Granelidsvägen
+700408,Vårdsätravik
+700409,Lurbo bro
+700411,Gottsundavägen
+700412,Djurgårdsvägen
+700413,Källbovägen
+700414,Martallsvägen
+700439,Lefflersgatan
+700441,Södra Slavstavägen
+700443,Solrosgatan
+700444,Klarbärsgatan
+700445,Hjortrongatan
+700446,Smålandsvägen
+700449,Nyby servicehus
+700450,Mistelgatan södra
+700466,Byggmästarparken
+700467,Snickaren
+700468,Stagneliusgatan
+700469,Bellmansskolan
+700471,Servicehuset Galaxen
+700475,Artillerigatan
+700476,Sävja Vårdcentral
+700477,Skogsblomman
+700488,Stenhagens Centrum
+700491,Tartugatan
+700492,Akademiska ing 30-50
+700493,Akademiska ing 60-70
+700495,Botvidsgatan
+700499,Coop Forum / IKEA
+700512,U:a Business Park Ö.
+700513,U:a Business Park V.
+700514,Engelska parken
+700515,Skogsvallen
+700517,Stenhagens köpcentrum
+700523,Småstensvägen
+700524,Havrevägen
+700525,Uppsala Science Park
+700527,Allianshallen
+700531,Sofielundsgatan
+700532,Auroragatan
+700533,Viktor Rydbergsgatan
+700534,Löten
+700536,Stenhagen
+700537,Röbo
+700538,Garnisonen
+700539,Strandbodgatan
+700541,Molngatan
+700542,Regngatan
+700543,Polishuset
+700544,Forsmarksparken
+700545,Nyodlarvägen
+700549,Börjegatan
+700550,Bolandsparken
+700551,Snickargatan
+700552,Klockarängen
+700554,Nåntuna Backe
+700555,Lugnet
+700557,Heimdalsvägen
+700558,Fullerö
+700560,Fyrishovs entré
+700566,Seminariegatan
+700567,Nyby köpcentrum
+700568,Täljstensvägen
+700569,Berthåga kyrkogård
+700570,Stenhagens IP
+700571,Kiselvägen
+700572,Polacksbacken
+700574,Ekudden
+700575,Blåsenhus
+700576,Idrottsgatan
+700578,Svandammen
+700579,Slädvägen
+700580,Atterbomsgatan
+700581,Väderkvarnsgatan
+700582,Polhemsparken
+700583,Evolutionsmuseet
+700584,Ullforsgatan
+700585,Skoghall
+700586,Tackjärnsgatan
+700587,Akademiska sjukhuset
+700588,Psykiatrins hus
+700589,Bergaskolan/B Hjorths Hus
+700590,Biomedicinskt centrum
+700591,Stadsbiblioteket
+700592,Depå Fyrislund
+700594,S:t Persgatan
+700595,Karin Boyegatan
+700596,Kungsängsgatan
+700599,Naturstensvägen
+700600,Centralstationen
+700601,Stationsgatan
+700602,Götgatan
+700604,Bolandgymnasiet
+700605,Ekeby bruk
+700607,Kungshögarna
+700608,Säbygatan
+700609,Emmy Rappes väg
+700610,Hedensbergsvägen
+700611,Oslogatan
