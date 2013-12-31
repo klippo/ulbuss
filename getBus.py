@@ -78,7 +78,7 @@ def listStations():
 def parseStations(stationName, time=False):
     for station in stationName.split('|'):
         with open(stationsFile, 'r') as stations:
-            for station in re.finditer('.*' + station + '.*', stations.read(), flags=re.MULTILINE):
+            for station in re.finditer('.*' + station + '.*', stations.read(), flags=re.IGNORECASE):
                 station = station.group(0).decode('utf8')
                 stationName = station.split(',')[-1]
                 stationId = station.split(',')[0]
