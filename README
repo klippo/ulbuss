@@ -3,7 +3,7 @@ Requirements:
 
 
 
-Usage: ./getBus.py [ options ]
+Usage: getBus.py [ options ]
 
 Options:
          -[lgfh] [ --list ] [ --help ]
@@ -19,6 +19,11 @@ Options:
        --get stationName (-g short option)
              Gets the current timetable for stationName provided.
              Multiple stations can be inputed by dividing with |
+
+             Optional:
+
+             --time HHMM (-t short option)
+                    Gets the current timetable for the specified time.
 
        --fetch (-f short option)
              Fetches all UL stations with ID between 700001 and 700611 and
