@@ -11,6 +11,9 @@ import HTMLParser
 
 URL = 'http://mobil.ul.nu/stadsbuss/vemos2_web.dll/betatest/mhpl?hplnr=%s'
 stationsFile = 'stations.txt'
+headers = {
+    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:26.0) Gecko/20100101 Firefox/26.0'
+}
 
 
 def printUsage():
@@ -74,7 +77,8 @@ def parseStations(stationName):
 
 def getStation(stationName, stationId):
     pars = HTMLParser.HTMLParser()
-    response = r.get(URL % stationId)
+    url = URL % stationId
+    response = r.get(url, headers=headers)
     remove = [
         u'</div.*\n',
         u'<div.*\n',
