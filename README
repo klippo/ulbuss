@@ -18,6 +18,7 @@ Options:
 
        --get stationName (-g short option)
              Gets the current timetable for stationName provided.
+             Multiple stations can be inputed by dividing with |
 
        --fetch (-f short option)
              Fetches all UL stations with ID between 700001 and 700611 and

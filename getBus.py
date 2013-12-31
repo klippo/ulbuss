@@ -29,6 +29,7 @@ def printUsage():
     print("")
     print("       --get stationName (-g short option)")
     print("             Gets the current timetable for stationName provided.")
+    print("             Multiple stations can be inputed by dividing with |")
     print("")
     print("       --fetch (-f short option)")
     print("             Fetches all UL stations with ID between 700001 and 700611 and")
