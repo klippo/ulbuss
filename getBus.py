@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*
 
 import sys
+import datetime
 import os
 import getopt
 import requests as r
@@ -9,7 +10,7 @@ import re
 import HTMLParser
 
 
-URL = 'http://mobil.ul.nu/stadsbuss/vemos2_web.dll/betatest/mhpl?hplnr=%s'
+URL = 'http://mobil.ul.nu/stadsbuss/vemos2_web.dll/betatest/mhpl?hplnr=%s&starttid=%s'
 stationsFile = 'stations.txt'
 headers = {
     'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:26.0) Gecko/20100101 Firefox/26.0'
@@ -42,7 +43,7 @@ def printUsage():
 
 def main(argv):
     try:
-        opts, args = getopt.getopt(argv, "g:hfl", ["get","help", "fetch"])
+        opts, args = getopt.getopt(argv, "g:t:hfl", ["get","time","help", "fetch"])
     except getopt.GetoptError:
         printUsage()
         sys.exit(2)
@@ -51,7 +52,12 @@ def main(argv):
         if opt in ("-h", "--help"):
             printUsage()
         elif opt in ("-g", "--get"):
-            parseStations(arg)
+            time = None
+            for opt, argt in opts: 
+                if opt in ("-t", "--time"):
+                    time = argt
+                    break
+            parseStations(arg,time)
         elif opt in ("-f", "--fetch"):
             fetchStations()
         elif opt in ("-l", "--list"):
@@ -64,7 +70,7 @@ def listStations():
     with open(stationsFile, 'r') as stations:
         print stations.read()
 
-def parseStations(stationName):
+def parseStations(stationName, time=False):
     for station in stationName.split('|'):
         with open(stationsFile, 'r') as stations:
             for station in re.finditer('.*' + station + '.*', stations.read(), flags=re.MULTILINE):
@@ -72,12 +78,15 @@ def parseStations(stationName):
                 stationName = station.split(',')[-1]
                 stationId = station.split(',')[0]
 
-                getStation(stationName, stationId)
+                getStation(stationName, stationId, time)
 
 
-def getStation(stationName, stationId):
+def getStation(stationName, stationId, time=False):
+    if not time:
+        time = datetime.datetime.now().time().strftime("%H:%M")
+
     pars = HTMLParser.HTMLParser()
-    url = URL % stationId
+    url = URL % (stationId, time)
     response = r.get(url, headers=headers)
     remove = [
         '</b>',
