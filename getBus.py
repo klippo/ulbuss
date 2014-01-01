@@ -9,7 +9,6 @@ import requests as r
 import re
 import HTMLParser
 
-
 URL = 'http://mobil.ul.nu/stadsbuss/vemos2_web.dll/betatest/mhpl?hplnr=%s&starttid=%s'
 stationsFile = 'stations.txt'
 headers = {
@@ -48,7 +47,7 @@ def printUsage():
 
 def main(argv):
     try:
-        opts, args = getopt.getopt(argv, "g:t:hfl", ["get","time","help", "fetch"])
+        opts, args = getopt.getopt(argv, "g:t:hfl", ["get=", "time=", "help", "fetch"])
     except getopt.GetoptError:
         printUsage()
         sys.exit(2)
@@ -58,11 +57,11 @@ def main(argv):
             printUsage()
         elif opt in ("-g", "--get"):
             time = None
-            for opt, argt in opts: 
+            for opt, argt in opts:
                 if opt in ("-t", "--time"):
                     time = argt
                     break
-            parseStations(arg,time)
+            parseStations(arg, time)
         elif opt in ("-f", "--fetch"):
             fetchStations()
         elif opt in ("-l", "--list"):
@@ -74,6 +73,7 @@ def main(argv):
 def listStations():
     with open(stationsFile, 'r') as stations:
         print stations.read()
+
 
 def parseStations(stationName, time=False):
     for station in stationName.split('|'):
@@ -99,7 +99,7 @@ def getStation(stationName, stationId, time=False):
     ]
     destinations = {}
     departures = {}
-    print("Departures from %s" % stationName)
+    print(u"Avgångar från %s" % stationName)
     print("")
     destcount = 0
     depcount = 0
@@ -122,8 +122,12 @@ def getStation(stationName, stationId, time=False):
         departures.update(departure)
         depcount = depcount + 1
 
-    for key in destinations:
-        print(destinations[key] + departures[key])
+    if destinations:
+        for key in destinations:
+            print(destinations[key] + departures[key])
+    else:
+        print(u"Inga avgångar från %s klockan %s idag" % (stationName, time))
+
 
     print('')
 
@@ -141,7 +145,7 @@ def fetchStations():
     for file in range(700001, 700612):
         file = str(file)
 
-        with open('data/' +file + '.html', 'r') as infile:
+        with open('data/' + file + '.html', 'r') as infile:
         #response = r.get(URL % stationId)
             for match in re.finditer('Avg.* <', infile.read(), flags=re.MULTILINE):
             #for match in re.finditer('Avg.* <', response.text, flags=re.MULTILINE):
