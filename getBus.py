@@ -126,7 +126,7 @@ def getStation(stationName, stationId, time=False):
         for key in destinations:
             print(destinations[key] + departures[key])
     else:
-        print(u"Inga avgångar från %s klockan %s idag" % (stationName, time))
+        print("Inga avgångar från %s klockan %s idag" % (stationName, time))
 
     print('')
 
@@ -136,8 +136,8 @@ def fetchStations():
     print('Dont use this for now, use the provided %s' % stationsFile)
     sys.exit(0)
     remove = [
-        u'Avgångar från ',
-        u' i Uppsala.*'
+        "Avgångar från ",
+        " i Uppsala.*"
     ]
     if os.path.isfile(stationsFile):
         os.remove(stationsFile)
