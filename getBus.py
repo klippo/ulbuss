@@ -30,9 +30,9 @@ def printUsage():
     print("       --help (-h short option)")
     print("             Shows this screen.")
     print("")
-    print("       --get stationName (-g short option)")
+    print("       --station stationName (-s short option)")
     print("             Gets the current timetable for stationName provided.")
-    print("             Multiple stations can be inputed by dividing with |")
+    print("             Multiple stations can be entered, dividing using |")
     print("")
     print("             Optional: ")
     print("")
@@ -47,7 +47,7 @@ def printUsage():
 
 def main(argv):
     try:
-        opts, args = getopt.getopt(argv, "g:t:hfl", ["get=", "time=", "help", "fetch"])
+        opts, args = getopt.getopt(argv, "s:t:hfl", ["station=", "time=", "help", "fetch"])
     except getopt.GetoptError:
         printUsage()
         sys.exit(2)
@@ -55,7 +55,7 @@ def main(argv):
     for opt, arg in opts:
         if opt in ("-h", "--help"):
             printUsage()
-        elif opt in ("-g", "--get"):
+        elif opt in ("-s", "--station"):
             time = None
             for opt, argt in opts:
                 if opt in ("-t", "--time"):
