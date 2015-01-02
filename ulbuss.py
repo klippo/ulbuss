@@ -91,7 +91,6 @@ def get_station(stationname, stationid, time=False):
         time = datetime.datetime.now().time().strftime("%H:%M")
 
     url = URL % (stationid, time)
-    print(url)
     response = r.get(url, headers=headers)
     remove = [
         '</b>',
